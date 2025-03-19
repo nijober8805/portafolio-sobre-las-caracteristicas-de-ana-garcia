@@ -1,0 +1,112 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario:#f6f6f6;
+    --color-terciario:#22D4FD;
+
+    --fuente-monserrat: 'Monserrat', sans-serif;
+    --fuente-krona:'krona one', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+.header{
+    padding: 2% 0% 0% 15%;
+
+}
+.header_menu{
+    display: flex;
+    gap: 80px;
+
+}
+.header_menu_link{
+ font-family: var(--fuente-monserrat);
+ font-size: 24px;
+ font-weight: 600;
+ color: var(--color-terciario);
+ text-decoration: none;
+}
+
+
+/**
+ flex deja que acomodar los objetos.
+*/
+.presentacion{
+    display: flex;
+    align-items: center;
+    margin: 6% 15%;
+    justify-content:space-between ;
+}
+.presentacion_contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.presentacion_contenido_titulo{
+    font-family: var(--fuente-krona);
+    font-size: 36px; 
+}
+.titulo-destaque{
+    color: var(--color-terciario);
+}
+.presentacion_contenido_texto{
+    font-family: var(--fuente-monserrat);
+   font-size: 24px; 
+}
+ 
+.presentacion_enlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; 
+    gap:32px;  
+}
+ 
+.presentacion_enlace_subtitulos{
+    font-family: var(--fuente-krona);
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+.presentacion_enlace_link{
+  width: 280px;
+  text-align: center; 
+  padding: 21.5px 0px;
+  border-radius: 8px; 
+  font-family: var(--fuente-monserrat);
+  font-size: 24px;
+  font-weight: 600px;
+  text-decoration: none;
+  color: #f6f6f6;
+  border: 2px solid #22D4fD;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.presentacion_enlace_link:hover{
+ 
+ background-color:#272727 ;
+
+}
+.footer{
+  background-color: var(--color-terciario);
+  padding: 24px;
+  color: var(--color-primario); 
+  text-align:center ; 
+  font-family: var(--fuente-monserrat);
+  font-size: 24px;
+  font-weight: 400;
+ }
